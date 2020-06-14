@@ -1,0 +1,10 @@
+$font: 'Roboto';
+$regular: 300;
+$baseTextColor: #000;
+$whiteColor: #fff;
+
+body {
+  font-family: $font, sans-serif;
+  color: $baseTextColor;
+  background: $whiteColor;
+}

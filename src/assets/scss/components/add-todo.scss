@@ -1,0 +1,52 @@
+.add-todo {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 12px;
+  &.error-lenght {
+    .error {
+      display: block;
+    }
+    .name {
+      margin: 0 0 12px;
+      border-color: #F95738;
+    }
+  }
+  .name,
+  .description {
+    padding: 6px 12px;
+    font-family: 'Roboto';
+    font-size: 32px;
+    line-height: 34px;
+    border-radius: 8px;
+    border: 1px solid black;
+  }
+  .name {
+    margin: 23px 0 12px;
+    height: 56px;
+  }
+  .description {
+    margin: 0 0 12px;
+    height: 112px;
+    resize: none;
+  }
+  .error {
+    display: none;
+    padding: 2px 10px;
+    color: #F95738;
+  }
+  .save-todo {
+    transition: all 0.3s;
+    color: black;
+    font-size: 32px;
+    line-height: 56px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    outline: none;
+    &:hover {
+      transform: scale(1.005);
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+}
