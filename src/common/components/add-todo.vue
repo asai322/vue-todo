@@ -19,12 +19,6 @@
             }
         },
 
-        computed: {
-          state() {
-              return this.$store;
-          }
-        },
-
         methods: {
             saveTodo() {
                 if (this.name.length < 2) {
