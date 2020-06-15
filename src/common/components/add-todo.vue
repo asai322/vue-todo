@@ -30,18 +30,18 @@
                 if (this.name.length < 2) {
                     return this.error_length = true;
                 } else {
+                    const id_todo =`f${(+new Date).toString(16)}`;
+
+                    this.$store.commit('addTodo', {
+                        name: this.name,
+                        description: this.description,
+                        completed: false,
+                        id: id_todo
+                    });
+
                     this.error_length = false;
+                    this.name = this.description = '';
                 }
-
-                const id_todo =`f${(+new Date).toString(16)}`;
-                this.$store.commit('addTodo', {
-                    name: this.name,
-                    description: this.description,
-                    completed: false,
-                    id: id_todo
-                });
-
-                this.name = this.description = '';
             }
         }
     }

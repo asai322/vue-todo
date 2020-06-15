@@ -19,9 +19,9 @@
 
         data() {
             return {
-                editMode: false,
                 name: '',
                 description: '',
+                editMode: false,
                 completed: false
             }
         },
