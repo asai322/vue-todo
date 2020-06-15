@@ -8,10 +8,6 @@
   import './assets/scss/main.scss';
 
   export default {
-    name: 'app',
-
-    data() {
-      return {}
-    }
+    name: 'app'
   }
 </script>

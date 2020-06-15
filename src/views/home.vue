@@ -12,10 +12,6 @@
 
     export default {
         name: 'app',
-        components: { AddTodo, ListTodo },
-
-        data() {
-            return {}
-        }
+        components: { AddTodo, ListTodo }
     }
 </script>
