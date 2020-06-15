@@ -22,7 +22,7 @@
         methods: {
             saveTodo() {
                 if (this.name.length < 2) {
-                    return this.error_length = true;
+                    this.error_length = true;
                 } else {
                     const id_todo =`f${(+new Date).toString(16)}`;
 
